@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs/dist/chessboard-0.1.0.min.css" />
+    <style>
+        #board { width: 400px; }
+        #board .square-55d63 { width: 50px; height: 50px; }
+        #board .piece { font-size: 36px; }
+        .status { font-size: 16px; }
+        .actions { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Chess Game</h1>
+    <div id="board" class="board"></div>
+    <div class="actions">
+        <button id="startBtn">Start Position</button>
+        <button id="clearBtn">Clear Board</button>
+    </div>
+    <div class="status" id="status"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs/dist/chessboard-0.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
+    <script src="chess.js"></script>
+</body>
+</html>
